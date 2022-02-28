@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#completion {
+    /*width:20%;*/
+    height: 40px;
+    /*padding-bottom: 20px;*/
+    /*margin-left: 20px;*/
+    display: block;
+    /*position: absolute;*/
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes hideshow {
+    0% { opacity: 0.2; }
+    10% { opacity: 0.2; }
+    15% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+#cirkel {
+    animation: hideshow 0.4s ease;
+}
+
+#check {
+    animation: hideshow 0.4s ease;
+}
+
+#stars {
+    animation: hideshow 1.0s ease;
+    opacity: 0.9;
+}
+
+
+@keyframes hideshow {
+    0% {
+        transform: scale(0.2);
+        transform-origin: initial;
+
+    }
+    100% {
+        transform: scale(1.0);
+        transform-origin: initial;
+    }
+}
+
+@keyframes draaien {
+    0% {
+        transform: rotate(40deg);
+        transform-origin: initial;
+
+    }
+    100% {
+        transform: scale(0deg);
+        transform-origin: initial;
+    }
+}
+
+#check {
+    animation: draaien 0.8s ease;
+}
+
+
+@keyframes transparant {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#check {
+    animation: transparant 2s ;
 }
